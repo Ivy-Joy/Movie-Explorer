@@ -10,17 +10,16 @@ export default function Gallery() {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    // Simulate API call + delay
+    // Simulating the API call
     const fetchMovies = async () => {
       try {
         setLoading(true);
-
-        // Example mock API (you can replace with your own)
+        
         const response = await fetch("/mock/movies.json");
         const data = await response.json();
         
          const movieList = Array.isArray(data) ? data : data.data || [];
-        // Simulate delay
+        // Simulating delay
         setTimeout(() => {
           setMovies(movieList);
           setFiltered(movieList);
@@ -35,7 +34,7 @@ export default function Gallery() {
     fetchMovies();
   }, []);
 
-  // Filter movies by genres
+  // Filter movies by genres might add others like title, years later
   useEffect(() => {
     if (!search || !search.trim()) {
       setFiltered(movies);
@@ -62,7 +61,7 @@ export default function Gallery() {
   return (
     <div className="gallery-container">
       <header className="gallery-header">
-        <h1>🎬 Movie Explorer</h1>
+        <h1>Movie Explorer</h1>
         <div className="gallery-actions">
           <input
             type="text"
