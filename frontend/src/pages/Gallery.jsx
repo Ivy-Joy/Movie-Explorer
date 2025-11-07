@@ -10,17 +10,16 @@ export default function Gallery() {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    // Simulate API call + delay
+    // Simulating API call
     const fetchMovies = async () => {
       try {
         setLoading(true);
 
-        // Example mock API (you can replace with your own)
         const response = await fetch("/mock/movies.json");
         const data = await response.json();
         
          const movieList = Array.isArray(data) ? data : data.data || [];
-        // Simulate delay
+        // SimulatING delay
         setTimeout(() => {
           setMovies(movieList);
           setFiltered(movieList);
@@ -35,7 +34,7 @@ export default function Gallery() {
     fetchMovies();
   }, []);
 
-  // Filter movies by genres
+  // Filtering movies by genres...might add title, year later if I want to make a responsive movie app
   useEffect(() => {
     if (!search || !search.trim()) {
       setFiltered(movies);
@@ -62,7 +61,7 @@ export default function Gallery() {
   return (
     <div className="gallery-container">
       <header className="gallery-header">
-        <h1>🎬 Movie Explorer</h1>
+        <h1>Movie Explorer</h1>
         <div className="gallery-actions">
           <input
             type="text"
@@ -94,7 +93,10 @@ export default function Gallery() {
                   className="movie-poster"
                 />
                 <h3>{movie.title}</h3>
-                <p>{movie.genres}</p>
+                <span style={{color: "gray"}}>{Array.isArray(movie.genres)
+                 ? movie.genres.join(", ")
+                  : String(movie.genres)}
+                </span>
               </div>
             ))
           ) : (
