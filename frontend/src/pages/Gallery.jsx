@@ -10,16 +10,16 @@ export default function Gallery() {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    // Simulating API call
+    // Simulating the API call
     const fetchMovies = async () => {
       try {
         setLoading(true);
-
+        
         const response = await fetch("/mock/movies.json");
         const data = await response.json();
         
          const movieList = Array.isArray(data) ? data : data.data || [];
-        // SimulatING delay
+        // Simulating delay
         setTimeout(() => {
           setMovies(movieList);
           setFiltered(movieList);
