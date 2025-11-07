@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "The Dawn Rises",
+    "year": 2023,
+    "genres": ["Drama", "Inspiration"],
+    "synopsis": "A young woman overcomes personal loss to rediscover her purpose through art and community.",
+    "director": "Yagirl Brea",
+    "rating": 8.4,
+    "posterURL": "https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 2,
+    "title": "Code Horizon",
+    "year": 2024,
+    "genres": ["Sci-Fi", "Thriller"],
+    "synopsis": "In a world run by artificial intelligence, a rebel coder fights to restore human freedom.",
+    "director": "Pharell Hawi",
+    "rating": 7.9,
+    "posterURL": "https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 3,
+    "title": "Beyond the River",
+    "year": 2021,
+    "genres": ["Adventure", "Family"],
+    "synopsis": "Two brothers embark on a journey across a vast river to uncover a secret from their past.",
+    "director": "Dominic Weda",
+    "rating": 8.1,
+    "posterURL": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 4,
+    "title": "City Lights, Quiet Hearts",
+    "year": 2022,
+    "genres": ["Romance", "Drama"],
+    "synopsis": "Amid the chaos of Nairobi’s nightlife, two dreamers find love while chasing their ambitions.",
+    "director": "Lucky Corrazon",
+    "rating": 8.0,
+    "posterURL": "https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 5,
+    "title": "Echoes of Tomorrow",
+    "year": 2025,
+    "genres": ["Mystery", "Sci-Fi"],
+    "synopsis": "When a scientist starts receiving messages from her future self, she must prevent a disaster she caused.",
+    "director": "Ivy Joy",
+    "rating": 8.6,
+    "posterURL": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=600&q=80"
+  }
+]
